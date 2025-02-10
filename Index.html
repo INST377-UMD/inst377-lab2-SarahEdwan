@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INST377 - Form</title>
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        .input-container {
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin-top: 5px;
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #submit {
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>I am super cool</h1>
+
+    <form action="page2.html" method="GET">
+        <div class="input-container">
+            <label for="name">Type something if you agree:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <input type="submit" id="submit" value="Submit">
+    </form>
+
+</body>
+</html>
